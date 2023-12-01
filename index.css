@@ -1,0 +1,70 @@
+body {
+    height: 100%;
+
+    background-color: rgb(56, 50, 50);
+    color: #b16e6e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-shadow:    -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+                    1px 1px 3px black,
+                    1px 1px 5px rgba(0, 0, 0, 0.5),
+                    1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+h1{
+    font-size: 4vh;
+    line-height: 4vh;
+    margin: 2vh 0;
+}
+h2{
+    font-size: 3vh;
+    line-height: 3vh;
+    margin: 0;
+}
+p{
+    font-size: 2.4vh;
+    line-height: 2.4vh;
+}
+
+#color-display {
+    height: 30vh;
+    aspect-ratio: 1;
+    border: 2px solid #000;
+    border: #000000 8px solid;
+}
+
+#lista-opcoes {
+    width: 80vw;
+    column-gap: 2vw;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-option {
+    flex-grow: 1;
+    aspect-ratio: 1;
+    cursor: pointer;
+    border: #000000 3px solid;
+}
+
+#log{
+    font-size: 2.6vh;
+    margin: 2vh 0;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    #lista-opcoes {
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23% 23%;
+            row-gap: 2vh;
+    }
+}
